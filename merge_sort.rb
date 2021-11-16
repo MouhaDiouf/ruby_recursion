@@ -30,4 +30,11 @@ def sort_arr_helper(left, right)
     result.concat(remainder_left).concat(remainder_right)
 end 
 
-p merge_sort([1, 0, 3, 6, 120, -2])
+
+random_arr = Array.new 
+
+50.times do 
+    random_arr << rand(0..1000)
+end 
+
+p merge_sort(random_arr)
